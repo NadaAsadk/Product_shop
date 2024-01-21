@@ -77,3 +77,18 @@ img{
    border-radius: 20px;
    width:100%;
 }
+@media screen and (max-width:800px) {
+    .product{
+        width:calc((100% - 80px) / 3);
+    }
+}
+@media screen and (max-width:600px) {
+    .product{
+        width:calc((100% - 80px) / 2);
+    }
+}
+@media screen and (max-width:400px) {
+    .product{
+        width:100%;
+    }
+}
