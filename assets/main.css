@@ -91,7 +91,10 @@ span{
 img{
    border-radius: 20px;
    width:100%;
+<<<<<<< HEAD
    height: 300px;
+=======
+>>>>>>> 3b676f1f3d85f5b7f00d4cb638124acf08f2eac3
 }
 @media screen and (max-width:800px) {
     .product{
@@ -107,4 +110,8 @@ img{
     .product{
         width:100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3b676f1f3d85f5b7f00d4cb638124acf08f2eac3
