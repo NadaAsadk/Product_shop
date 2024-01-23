@@ -48,14 +48,15 @@ h2{
 }
 span{
     background-color: red;
+    font-size: small;
     position: absolute;
     bottom: 0;
     right: 0;
     width:30%;
-    height: 15%;
+    height: 12%;
     text-align: center;
     color: aliceblue;
-    padding: 15px;
+    padding: 14px 4px 14px 4px;
     font-weight: 700;
     border-radius: 20px 0px 20px 0px;
 }
@@ -91,10 +92,7 @@ span{
 img{
    border-radius: 20px;
    width:100%;
-<<<<<<< HEAD
-   height: 300px;
-=======
->>>>>>> 3b676f1f3d85f5b7f00d4cb638124acf08f2eac3
+   height:300px;
 }
 @media screen and (max-width:800px) {
     .product{
@@ -110,8 +108,4 @@ img{
     .product{
         width:100%;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3b676f1f3d85f5b7f00d4cb638124acf08f2eac3
