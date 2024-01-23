@@ -48,14 +48,15 @@ h2{
 }
 span{
     background-color: red;
+    font-size: small;
     position: absolute;
     bottom: 0;
     right: 0;
     width:30%;
-    height: 15%;
+    height: 12%;
     text-align: center;
     color: aliceblue;
-    padding: 14px;
+    padding: 14px 4px 14px 4px;
     font-weight: 700;
     border-radius: 20px 0px 20px 0px;
 }
