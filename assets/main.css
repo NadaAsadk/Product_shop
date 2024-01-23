@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(134, 181, 203);
+    background-color:#F4EAEA;
 }
 
 .container{
@@ -14,10 +14,18 @@ body{
     flex-direction: column;
     align-items: center;
     gap:20px;
-    padding: 20px;
+    padding: 0px 20px;
 }
 h1{
-    color:rgb(255, 255, 255);
+    color:#D48686;
+    background-color:#F4EAEA;
+    position: sticky;
+    top:0;
+    width:100%;
+    text-align: center;
+    padding: 20px;
+    z-index: 20;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
 }
 h2{
     color:rgb(255, 255, 255);
@@ -25,8 +33,10 @@ h2{
     text-align: center;
     padding:7px;
     border-radius: 20px 20px 0px 0px;
-    background-color:rgb(50, 103, 127);
+    background-color:#D48686;
+    border:1px solid white;
 }
+
 .info{
     color:rgb(255, 255, 255);
     align-self: flex-start;
@@ -34,22 +44,25 @@ h2{
     flex-direction: column;
     flex-wrap: wrap;
     gap:5px;  
+    font-weight: 700;
 }
 span{
     background-color: red;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width:30%;
+    height: 15%;
     text-align: center;
     color: aliceblue;
-    padding:4px;
+    padding: 15px;
     font-weight: 700;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 20px 0px 20px 0px;
 }
 .products{
     display: flex;
     gap:10px;
+    padding:20px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -57,9 +70,10 @@ span{
 .product:hover{
     transform: scale(1.2);
     z-index: 10;
+
 }
 .product{
-    background-color:rgb(84, 154, 186);
+    background-color:#DDAEAE;
     border-radius: 20px;
     width:calc((100% - 80px) / 4);
     display: flex;
@@ -69,11 +83,28 @@ span{
     padding:5px;
     justify-content: flex-start;
     align-items: center;
-    border:1px solid rgb(51, 99, 122);
+    border:1px solid white;
     position: relative;
     z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
 }
 img{
    border-radius: 20px;
    width:100%;
+   height: 300px;
+}
+@media screen and (max-width:800px) {
+    .product{
+        width:calc((100% - 80px) / 3);
+    }
+}
+@media screen and (max-width:600px) {
+    .product{
+        width:calc((100% - 80px) / 2);
+    }
+}
+@media screen and (max-width:400px) {
+    .product{
+        width:100%;
+    }
 }
