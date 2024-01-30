@@ -126,11 +126,19 @@ span {
     position: absolute;
     bottom: 0;
     right: 0;
+<<<<<<< HEAD
     left: 0;
     width: 100%;
     text-align: center;
     color: aliceblue;
     padding: 4px;
+=======
+    width:30%;
+    height: 12%;
+    text-align: center;
+    color: aliceblue;
+    padding: 14px 4px 14px 4px;
+>>>>>>> 08179bf0f6d7bc89a17e70cb7ece4ae9662b9f41
     font-weight: 700;
     border-radius: 0px 0px 20px 20px;
 }
@@ -166,11 +174,18 @@ span {
     z-index: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
 }
+<<<<<<< HEAD
 
 img {
     border-radius: 20px;
     width: 100%;
     height: 250px;
+=======
+img{
+   border-radius: 20px;
+   width:100%;
+   height:300px;
+>>>>>>> 08179bf0f6d7bc89a17e70cb7ece4ae9662b9f41
 }
 
 @media screen and (max-width:800px) {
@@ -189,4 +204,8 @@ img {
     .product {
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 08179bf0f6d7bc89a17e70cb7ece4ae9662b9f41
