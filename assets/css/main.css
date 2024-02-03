@@ -39,7 +39,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 0px;
+    padding: 20px;
 }
 
 .containerd {
@@ -69,12 +69,23 @@ h2 {
     border: 2px solid white;
 }
 
+h3 {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #D48686;
+    border: 2px solid white;
+}
+
 p {
     color: rgb(255, 255, 255);
     text-transform: capitalize;
 }
 
 .detailedproduct {
+    width: fit-content;
     background-color: #DDAEAE;
     border-radius: 20px;
     display: flex;
@@ -87,6 +98,29 @@ p {
     border: 5px solid white;
     box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
 
+}
+.sideBarRight{
+    background-color: #DDAEAE;
+    border: 5px solid white;
+    width: 50%;
+    height: 100%;
+    z-index: 2000;
+    position: absolute;
+    padding: 20px;
+    top:0;
+    right:-100%;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
+}
+.sideBarRight svg{
+    width:fit-content;
+    height: 30px;
+    fill:#f3f3f3;
+    justify-self: flex-start;
+    margin-right: auto;
+}
+.showside{
+    right:0;
 }
 
 .details {
@@ -104,8 +138,8 @@ p {
 
 .detailedproduct img {
     object-fit: cover;
-    width: fit-content;
-    height: fit-content;
+    width: 100%;
+    height: 100%;
 }
 
 .info {
@@ -117,36 +151,62 @@ p {
     gap: 10px;
     font-weight: 400;
     text-transform: capitalize;
-    padding:0px 10px;
+    padding: 0px 10px;
 }
 
 span {
-    background-color: red;
     font-size: small;
     position: absolute;
     bottom: 0;
     right: 0;
-<<<<<<< HEAD
     left: 0;
     width: 100%;
     text-align: center;
     color: aliceblue;
     padding: 4px;
-=======
-    width:30%;
+    width: 30%;
     height: 12%;
     text-align: center;
     color: aliceblue;
     padding: 14px 4px 14px 4px;
->>>>>>> 08179bf0f6d7bc89a17e70cb7ece4ae9662b9f41
     font-weight: 700;
     border-radius: 0px 0px 20px 20px;
 }
 
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 0px 30px;
+    z-index: 20;
+    background-color: #F4EAEA;
+}
+
+.scroll {
+    transition: 0.3s;
+    background-color: #e7c0c0;
+    box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
+}
+
+.scroll h1 {
+    transition: 0.3s;
+    color: #fff;
+}
+
+.scroll svg {
+    transition: 0.3s;
+    fill: #fff;
+}
+
 .products {
+    padding: 20px 0px;
     display: flex;
     gap: 30px;
-    padding: 10px 20px;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -161,7 +221,7 @@ span {
 .product {
     background-color: #DDAEAE;
     border-radius: 20px;
-    width: calc((100% - 80px) / 3);
+    width: calc((100% - 60px) / 3);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -174,18 +234,61 @@ span {
     z-index: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 3px 4px 7px;
 }
-<<<<<<< HEAD
 
 img {
     border-radius: 20px;
     width: 100%;
     height: 250px;
-=======
-img{
-   border-radius: 20px;
-   width:100%;
-   height:300px;
->>>>>>> 08179bf0f6d7bc89a17e70cb7ece4ae9662b9f41
+}
+
+svg {
+    position: relative;
+    width: 40px;
+    justify-self: flex-end;
+    margin-left: auto;
+    fill: #D48686;
+    cursor: pointer;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* تعيين لون الغطاء وتعتيمه */
+    z-index: 9999;
+    /* تأكد من أن الغطاء فوق كل شيء آخر */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    /* Light grey */
+    border-top: 8px solid #D48686;
+    /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dnone{
+    display: none;
 }
 
 @media screen and (max-width:800px) {
@@ -204,8 +307,4 @@ img{
     .product {
         width: 100%;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 08179bf0f6d7bc89a17e70cb7ece4ae9662b9f41

@@ -41,7 +41,7 @@ async function detailedData(){
     productd.appendChild(discountPercentage);
     productd.appendChild(rating);
     productd.appendChild(stock);
-    
+    document.querySelector(".overlay").classList.add('dnone');
 
 }
 detailedData();
