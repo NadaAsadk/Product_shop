@@ -1,8 +1,10 @@
 const sideBarButton = document.querySelector(".sideBar");
 const closeButton = document.querySelector(".close");
 const navBar = document.querySelector(".nav");
-const productss = document.querySelector(".productss"); 
+const productss = document.querySelector(".products"); 
 const SideBar = document.querySelector(".sideBarRight"); 
+const overall = document.querySelector(".container"); 
+
 
 
 window.onscroll = function(){
@@ -37,8 +39,12 @@ getProducts();
 
 sideBarButton.onclick = function(){
   SideBar.classList.add('showside');
+  document.querySelector(".over").classList.add('overlaySide');
+
 }
 
 closeButton.onclick = function(){
   SideBar.classList.remove('showside');
+  document.querySelector(".over").classList.remove('overlaySide');
+
 }
