@@ -86,6 +86,7 @@ p {
 
 .detailedproduct {
     width: fit-content;
+    width:fit-content;
     background-color: #DDAEAE;
     border-radius: 20px;
     display: flex;
@@ -165,6 +166,7 @@ span {
     color: aliceblue;
     padding: 4px;
     width: 30%;
+    width:30%;
     height: 12%;
     text-align: center;
     color: aliceblue;
@@ -290,6 +292,7 @@ svg {
 .dnone{
     display: none;
 }
+
 
 @media screen and (max-width:800px) {
     .product {
